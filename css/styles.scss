@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+// fonts
+$encodesans: "Encode Sans", sans-serif;
+$alegreya: "Alegreya Sans", sans-serif;
+$mons: "Montserrat", sans-serif;
+$expletus: "Expletus Sans", cursive;
+$seeweed: "Seaweed Script", cursive;
+
+// colors
+$fourth: #062743;
+$third: #113a5d;
+$second: #28615b;
+$first: #f9f9f9;
+
+@mixin space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+// headers
+header {
+  @include space();
+  padding: 12px 25px;
+  background-color: $second;
+  color: $first;
+}
+
+.header-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+.header-a {
+  text-decoration: none;
+  color: $first;
+  font-family: $alegreya;
+  font-size: 1.2rem;
+}
+.name-logo {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+.under-header {
+  background-color: #062743;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.myemail {
+  padding: 5px;
+}
+.myemail-a {
+  color: $first;
+  text-decoration: none;
+  font-family: $alegreya;
+  letter-spacing: 2px;
+}
+.myemail-i {
+  color: $first;
+  margin-right: 5px;
+}
+
+// front page
+.front-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 40px;
+  background-color: $first;
+}
+.moreinfo {
+  text-decoration: none;
+  margin-top: 80px;
+  font-family: $mons;
+}
+.mobile-title {
+  display: block;
+  font-family: $mons;
+  width: 100%;
+  color: $second;
+  text-align: left;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  opacity: 0.5;
+}
+.intro-name {
+  color: $third;
+  font-family: $alegreya;
+  font-weight: 100;
+  font-size: 3.2rem;
+  margin-bottom: -10px;
+}
+.hi {
+  color: $third;
+  font-family: $encodesans;
+}
+.left-cnt {
+  font-size: 1.6rem;
+  font-family: $mons;
+  color: $fourth;
+}
+.left-side {
+  width: 50%;
+  height: auto;
+}
+.right-side {
+  width: 40%;
+  .right-side-img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  // front page
+  .front-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: $first;
+  }
+  .intro-name {
+    color: $third;
+    font-family: $alegreya;
+    font-weight: 100;
+    font-size: 3rem;
+    margin-bottom: -14px;
+  }
+  .hi {
+    color: $third;
+    font-family: $encodesans;
+  }
+  .left-cnt {
+    font-size: 1.4rem;
+    font-family: $mons;
+    color: $fourth;
+  }
+  .left-side {
+    width: auto;
+  }
+  .right-side {
+    width: 30%;
+  }
+}
+
+@media (max-width: 850px) {
+  // front page
+  .front-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: $first;
+  }
+  .intro-name {
+    color: $third;
+    font-family: $alegreya;
+    font-weight: 100;
+    font-size: 2.7rem;
+    margin-bottom: -10px;
+  }
+  .hi {
+    color: $third;
+    font-family: $encodesans;
+  }
+  .left-cnt {
+    font-size: 1.2rem;
+    font-family: $mons;
+    color: $fourth;
+  }
+  .left-side {
+    width: auto;
+  }
+  .right-side {
+    width: 20%;
+  }
+}
+
+@media (max-width: 650px) {
+  // front page
+  .front-page {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: $first;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .intro-name {
+    color: $third;
+    font-family: $alegreya;
+    font-weight: 100;
+    font-size: 2.9rem;
+    margin-bottom: -5px;
+  }
+  .hi {
+    color: $third;
+    font-family: $encodesans;
+  }
+  .left-cnt {
+    font-size: 1.2rem;
+    font-family: $mons;
+    color: $fourth;
+  }
+  .right-side {
+    display: none;
+  }
+
+  .mobile-title {
+    display: block;
+    font-family: $mons;
+    width: 100%;
+    color: $second;
+    text-align: left;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    opacity: 0.5;
+  }
+}
+
+// ABOUT PAGE
+.about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 120px 100px;
+  background-color: $first;
+}
+
+.display-pic {
+  height: 200px;
+  width: 200px;
+  margin-right: 20px;
+  background-color: $fourth;
+  border-radius: 8px;
+}
+.about-ttle {
+  font-family: $alegreya;
+  font-size: 3rem;
+  color: $second;
+  line-height: 36px;
+  margin-bottom: 10px;
+  margin-left: -1px;
+}
+.about-paragraph {
+  font-family: $mons;
+  color: $fourth;
+  font-size: 1.3rem;
+  position: relative;
+  margin-bottom: 30px;
+}
+.about-ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 90px;
+}
+.about-li {
+  font-family: $expletus;
+  font-size: 2rem;
+  color: $second;
+  opacity: 0.7;
+}
+.about-cnt-mobo {
+  display: none;
+}
+.webdev {
+  font-family: $alegreya;
+  font-size: 1.4rem;
+  color: rgb(22, 152, 161);
+}
+@media (max-width: 800px) {
+  .about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 120px 20px;
+    background-color: $first;
+  }
+
+  .display-pic {
+    height: 150px;
+    width: 150px;
+    margin-right: 20px;
+    background-color: $fourth;
+    margin-bottom: 30px;
+  }
+  .about-ttle {
+    font-family: $alegreya;
+    font-size: 2.4rem;
+    color: $second;
+    line-height: 36px;
+    margin-bottom: 10px;
+    margin-left: -1px;
+  }
+  .about-paragraph {
+    font-family: $mons;
+    color: $fourth;
+    font-size: 1.1rem;
+    position: relative;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  .about-ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  .about-li {
+    font-family: $expletus;
+    font-size: 1.3rem;
+    color: $second;
+    opacity: 0.8;
+  }
+  .about-cnt {
+    display: none;
+  }
+  .about-cnt-mobo {
+    display: block;
+  }
+}
+
+// MERN PROJECTS STYLES
+.projects-page {
+  padding: 100px;
+}
+.proj-hid {
+  display: none;
+}
+.project-header {
+  font-family: $encodesans;
+  font-weight: 300;
+  color: #28615b;
+  font-size: 2.4rem;
+  margin-bottom: 80px;
+}
+.r {
+  font-family: $expletus;
+  font-size: 3rem;
+}
+.proj-name,
+.sproj-name {
+  font-size: 2.3rem;
+  color: $third;
+  font-family: $expletus;
+}
+.proj-def,
+.sproj-def {
+  position: relative;
+}
+.proj-cap,
+.sproj-cap {
+  font-family: sans-serif;
+  color: $second;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.proj-list,
+.sproj-list {
+  list-style: none;
+  color: $fourth;
+  font-family: $mons;
+  padding-left: 5px;
+  margin-bottom: 29px;
+}
+.proj-li,
+.sproj-li {
+  margin-bottom: 5px;
+}
+.proj-story,
+.sproj-story {
+  font-family: $mons;
+  color: $fourth;
+  margin-bottom: 30px;
+  width: 420px;
+}
+.proj-tools {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.tool {
+  padding: 5px 8px;
+  font-family: $encodesans;
+  color: $fourth;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+.projcont {
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-box {
+  @include start();
+  margin-bottom: 100px;
+  padding: 0 40px;
+}
+.proj-images {
+  width: 520px;
+  cursor: pointer;
+  position: relative;
+  height: 380px;
+  margin-right: 30px;
+}
+.proj-a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.projimg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+// RIGHT BOX
+
+.sproj-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+.sproj-images {
+  width: 520px;
+  cursor: pointer;
+  position: relative;
+  height: 310px;
+  margin-left: 30px;
+}
+.sproj-a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.sprojimg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+///////////////////// MOBO SIZE PROJECTS STYLE
+@media (max-width: 1100px) {
+  // MERN PROJECTS STYLES
+  .projects-page {
+    padding: 100px 10px;
+  }
+  .project-header {
+    font-size: 2.2rem;
+  }
+  .r {
+    font-family: $expletus;
+    font-size: 2.6rem;
+  }
+  .proj-name,
+  .sproj-name {
+    font-size: 1.8rem;
+  }
+
+  .proj-list,
+  .sproj-list {
+    list-style: none;
+    color: $fourth;
+    font-family: $mons;
+    padding-left: 5px;
+    margin-bottom: 29px;
+  }
+  .proj-li,
+  .sproj-li {
+    margin-bottom: 3px;
+  }
+  .proj-story {
+    font-family: $mons;
+    color: $fourth;
+    margin-bottom: 40px;
+    width: 340px;
+  }
+}
+@media (max-width: 900px) {
+  // eto sa front-page isa lang
+  .right-side {
+    display: none;
+  }
+  .proj-box,
+  .sproj-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .proj-images {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 500px;
+  }
+
+  .proj-story {
+    width: 100%;
+  }
+
+  .proj-hid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// CONTACT
+
+.contact-page {
+  padding: 100px 0 120px 10%;
+}
+.contact-capone {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #28615b;
+  font-family: $alegreya;
+}
+.contactcontent {
+  font-family: $mons;
+  color: #2d5166;
+  font-size: 1.8rem;
+  width: 80%;
+  margin-bottom: 50px;
+}
+.boldp {
+  font-weight: 900;
+}
+.align {
+  @include center();
+  margin-left: -10%;
+}
+
+.c-a {
+  text-align: center;
+  padding: 12px 35px;
+
+  color: #13978a;
+  font-family: $seeweed;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 1px solid #13978a;
+}
+
+@media (max-width: 800px) {
+  .contact-page {
+    padding: 100px 0 120px 5%;
+    background-color: $second;
+  }
+  .contact-capone {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #ecfff9;
+    font-family: $alegreya;
+  }
+  .contactcontent {
+    font-family: $mons;
+    color: #e4fffc;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .boldp {
+    font-weight: 900;
+  }
+  .c-a {
+    text-align: center;
+    padding: 10px 35px;
+
+    color: #9bffd0;
+    font-family: $seeweed;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px solid #9bffd0;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: $fourth;
+  font-family: $mons;
+  color: #e4fffc;
+}
+.footer-cap {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.raf {
+  font-family: $expletus;
+}
