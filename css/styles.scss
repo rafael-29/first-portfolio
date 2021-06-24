@@ -102,6 +102,9 @@ header {
   padding: 100px 40px;
   background-color: $first;
 }
+.left-cnt-mobo {
+  display: none;
+}
 .moreinfo {
   text-decoration: none;
   margin-top: 80px;
@@ -228,7 +231,7 @@ header {
     color: $third;
     font-family: $alegreya;
     font-weight: 100;
-    font-size: 2.9rem;
+    font-size: 2.6rem;
     margin-bottom: -5px;
   }
   .hi {
@@ -236,24 +239,23 @@ header {
     font-family: $encodesans;
   }
   .left-cnt {
-    font-size: 1.2rem;
-    font-family: $mons;
-    color: $fourth;
+    display: none;
   }
   .right-side {
     display: none;
   }
 
   .mobile-title {
+    margin-bottom: 12px;
+    font-size: 1.7rem;
+    opacity: 0.7;
+    letter-spacing: 1px;
+  }
+  .left-cnt-mobo {
     display: block;
+    font-size: 1.1rem;
     font-family: $mons;
-    width: 100%;
-    color: $second;
-    text-align: left;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    opacity: 0.5;
+    color: $fourth;
   }
 }
 
@@ -445,7 +447,7 @@ header {
   padding: 0 40px;
 }
 .proj-images {
-  width: 520px;
+  width: 470px;
   cursor: pointer;
   position: relative;
   height: 380px;
@@ -466,35 +468,6 @@ header {
   top: 0;
 }
 
-// RIGHT BOX
-
-.sproj-box {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-bottom: 100px;
-}
-.sproj-images {
-  width: 520px;
-  cursor: pointer;
-  position: relative;
-  height: 310px;
-  margin-left: 30px;
-}
-.sproj-a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.sprojimg {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 ///////////////////// MOBO SIZE PROJECTS STYLE
 @media (max-width: 1100px) {
   // MERN PROJECTS STYLES
@@ -508,21 +481,18 @@ header {
     font-family: $expletus;
     font-size: 2.6rem;
   }
-  .proj-name,
-  .sproj-name {
+  .proj-name {
     font-size: 1.8rem;
   }
 
-  .proj-list,
-  .sproj-list {
+  .proj-list {
     list-style: none;
     color: $fourth;
     font-family: $mons;
     padding-left: 5px;
     margin-bottom: 29px;
   }
-  .proj-li,
-  .sproj-li {
+  .proj-li {
     margin-bottom: 3px;
   }
   .proj-story {
@@ -532,7 +502,7 @@ header {
     width: 340px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   // eto sa front-page isa lang
   .right-side {
     display: none;
@@ -548,7 +518,7 @@ header {
   .proj-images {
     margin-bottom: 30px;
     width: 100%;
-    height: 500px;
+    height: 430px;
   }
 
   .proj-story {
