@@ -64,6 +64,9 @@ header {
   font-family: $alegreya;
   font-size: 1.2rem;
 }
+.aligned {
+  @include center();
+}
 .name-logo {
   font-size: 3.5rem;
   font-family: $logofont;
