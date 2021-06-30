@@ -270,10 +270,14 @@ header {
 
 .display-pic {
   height: 200px;
-  width: 200px;
+  width: 170px;
   margin-right: 20px;
   background-color: $fourth;
   border-radius: 8px;
+  .rafimg {
+    height: 100%;
+    width: 100%;
+  }
 }
 .about-ttle {
   font-family: $alegreya;
