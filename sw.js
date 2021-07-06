@@ -4,7 +4,11 @@ const toCache = ['index.html', '.', '/javascript/app.js', '/css/styles.css',
 '/images/bpthree.jpg',
 '/images/bptwo.jpg',
 '/images/frontpage.svg',
-'/images/rafaelsoimg.png',]
+'/images/rafaelsoimg.png',
+'/images/minilogo.png',
+'/images/jumbologo.png',
+
+]
 
 self.addEventListener('install', e => {
     caches.delete(myCache)

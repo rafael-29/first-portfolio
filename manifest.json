@@ -7,17 +7,18 @@
     "start_url": ".",
     "icons": [
         {
-            "src": "images/minilogo.png",
+            "src": "/images/jumbologo.png",
             "type": "image/png",
-            "size": "120x120",
-            "purpose": "any mascable"
+            "sizes": "529x529",
+            "purpose": "any maskable"
         },
         {
-            "src": "images/jumbologo.png",
+            "src": "/images/minilogo.png",
             "type": "image/png",
-            "size": "529x529",
-            "purpose": "any mascable"
+            "sizes": "120x120",
+            "purpose": "any maskable"
         }
+        
     ],
     "orientation": "standalone",
     "display": "standalone"
