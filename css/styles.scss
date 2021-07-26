@@ -508,6 +508,9 @@ header {
 }
 @media (max-width: 700px) {
   // eto sa front-page isa lang
+  .projects-page {
+    padding: 100px 0;
+  }
   .right-side {
     display: none;
   }
@@ -516,9 +519,11 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 10px;
+    padding: 0;
   }
-
+  .proj-def {
+    padding: 0 20px;
+  }
   .proj-images {
     margin-bottom: 30px;
     width: 100%;
